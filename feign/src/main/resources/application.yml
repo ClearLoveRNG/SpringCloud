@@ -1,10 +1,10 @@
 server:
-  port: 5555
+  port: 1003
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://localhost:1000/eureka/
 
 spring:
   application:

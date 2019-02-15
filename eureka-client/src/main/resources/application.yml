@@ -1,7 +1,7 @@
 
-#修改成2222再启动一次，就有2个客户端实例了
+#启动1001，1002两个端口的实例，就有2个客户端了
 server:
-  port: 3333
+  port: 1002
 
 #为eureka客户端命名
 spring:
@@ -12,7 +12,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://localhost:1000/eureka/
   instance:
     #服务提供者30秒向注册中心续约一次服务(默认30秒)
     lease-renewal-interval-in-seconds: 30

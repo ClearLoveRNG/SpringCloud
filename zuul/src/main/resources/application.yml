@@ -1,10 +1,10 @@
 server:
-  port: 7777
+  port: 1005
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://localhost:1000/eureka/
 
 spring:
   application:
@@ -12,12 +12,12 @@ spring:
 zuul:
   routes:
     #以/api-a/开头的请求都转发给ribbon服务；
-    #http://localhost:7777/ribbon/consumerHello
+    #http://localhost:1006/ribbon/consumerHello
     api-a:
       path: /ribbon/**
       serviceId: ribbon
     #以/api-b/开头的请求都转发给feign服务
-    #http://localhost:7777/feign/consumerHello
+    #http://localhost:1006/feign/consumerHello
     api-b:
       path: /feign/**
       serviceId: feign

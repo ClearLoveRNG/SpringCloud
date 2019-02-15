@@ -1,5 +1,5 @@
 server:
-  port: 4444
+  port: 1004
 
 #为eureka客户端命名
 spring:
@@ -10,6 +10,6 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://localhost:1000/eureka/
     #服务消费者会定期(默认30秒)向注册中心获取服务清单
     registry-fetch-interval-seconds: 30

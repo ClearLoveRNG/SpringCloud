@@ -14,7 +14,7 @@ spring:
   cloud:
     config:
         #配置中心服务器的访问地址
-        uri: http://localhost:1234/
+        uri: http://localhost:1007/
         #环境名
         profile: dev
         #分支名
