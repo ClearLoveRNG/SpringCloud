@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 1234
 
 spring:
   application:
@@ -17,7 +17,7 @@ spring:
   #/{application}-{profile}.properties
   #/{label}/{application}-{profile}.properties
 
-  #访问http://localhost:8888/config-server/dev/master
+  #访问http://localhost:1234/config-server/dev/master
   #返回值写在result.json
   cloud:
       config:

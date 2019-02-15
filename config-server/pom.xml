@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>config-server</name>
-	<description>配置中心服务器</description>
+	<description>配置中心服务端</description>
 
 	<parent>
 		<groupId>com.example</groupId>

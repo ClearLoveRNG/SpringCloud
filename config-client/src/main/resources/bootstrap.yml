@@ -1,0 +1,26 @@
+#默认加载顺序为:加载bootstrap.*里面的配置
+#              --> 链接config-server,加载远程配置
+#              --> 加载application.*里面的配置
+#bootstrap.yml 用于应用程序上下文的引导阶段。
+#bootstrap.yml 由父Spring ApplicationContext加载。
+#bootstrap.yml 可以理解成系统级别的一些参数配置，这些参数一般是不会变动的。
+#application.yml 可以用来定义应用级别的，如果搭配 spring-cloud-config 使用 application.yml 里面定义的文件可以实现动态替换。
+
+
+#因为此时是加载git上的yml配置文件，而不是加载本地的yml，所以要让整个项目写成config-server的应用名和config-server配置文件所在的git地址
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+        #配置中心服务器的访问地址
+        uri: http://localhost:1234/
+        #环境名
+        profile: dev
+        #分支名
+        label: master
+server:
+  port: 9999
+
+
+
