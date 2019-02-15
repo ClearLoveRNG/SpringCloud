@@ -14,13 +14,11 @@ spring:
   cloud:
     config:
         #配置中心服务器的访问地址
-        uri: http://localhost:1007/
+        uri: http://localhost:1006/
         #环境名
         profile: dev
         #分支名
         label: master
-server:
-  port: 9999
 
 
 
