@@ -20,13 +20,13 @@ public class ConfigClientController {
 
 
     //配置客户端会把配置服务端的配置信息加载进来，存到ApplicationContext实例中
-    @Value("${foo}")
-    private String foo;
+    @Value("${env}")
+    private String env;
     @Value("${server.port}")
     private String port;
 
-    @RequestMapping("/getFoo")
-    public String getFoo() {
-        return "foo:" + foo + "server.port:" + port;
+    @RequestMapping("/getEnv")
+    public String getEnv() {
+        return "env:" + env + "server.port:" + port;
     }
 }
