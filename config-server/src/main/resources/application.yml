@@ -4,6 +4,21 @@ server:
 spring:
   application:
     name: config-server
+
+
+  #访问的url对应能搜到的配置文件对应关系
+  # application:应用名(spring.application.name)
+  # profile:环境名(dev,test,prod)
+  # label:分支名(master,dev,test)
+  #
+  #/{application}/{profile}[/{label}]
+  #/{application}-{profile}.yml
+  #/{label}/{application}-{profile}.yml
+  #/{application}-{profile}.properties
+  #/{label}/{application}-{profile}.properties
+
+  #访问http://localhost:8888/config-server/dev/master
+  #返回值写在result.json
   cloud:
       config:
         server:

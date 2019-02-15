@@ -1,0 +1,29 @@
+{
+  "name": "config-server",
+  "profiles": [
+    "dev"
+  ],
+  "label": "master",
+  "version": "ec5b03b5f619141522fcaa3c231dfe87092a0890",
+  "state": null,
+  "propertySources": [
+    {
+      "name": "https://github.com/ClearLoveRNG/SpringCloud/config-server/src/main/resources/config-server-dev.yml",
+      "source": {
+        "document": "foo = dev-foo"
+      }
+    },
+    {
+      "name": "https://github.com/ClearLoveRNG/SpringCloud/config-server/src/main/resources/application.yml",
+      "source": {
+        "server.port": 8888,
+        "spring.application.name": "config-server",
+        "spring.cloud.config.server.git.uri": "https://github.com/ClearLoveRNG/SpringCloud",
+        "spring.cloud.config.server.git.username": "ClearLoveRNG",
+        "spring.cloud.config.server.git.password": "Jht19960726,.",
+        "spring.cloud.config.server.git.search-paths": "/config-server/src/main/resources",
+        "spring.cloud.config.label": "master"
+      }
+    }
+  ]
+}
