@@ -10,7 +10,7 @@
 #因为此时是加载git上的yml配置文件，而不是加载本地的yml，所以要让整个项目写成config-server的应用名和config-server配置文件所在的git地址
 spring:
   application:
-    name: config-server
+    name: config-client
   cloud:
     config:
         #配置中心服务器的访问地址
@@ -19,6 +19,8 @@ spring:
         profile: dev
         #分支名
         label: master
+server:
+  port: 8888
 
 
 

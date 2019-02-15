@@ -24,13 +24,13 @@ spring:
         server:
           git:
             #配置git仓库地址
-            uri: https://github.com/ClearLoveRNG/SpringCloud
+            uri: https://github.com/ClearLoveRNG/SpringCloudYml
             #访问git仓库的用户名
             username: ClearLoveRNG
             #访问git仓库的用户密码
             password: Jht19960726,.
             #配置仓库下的相对搜索位置
-            search-paths: /config-server/src/main/resources
+            search-paths: /yml
         #配置仓库的分支
         label: master
 
