@@ -4,13 +4,13 @@
     "dev"
   ],
   "label": "master",
-  "version": "ec5b03b5f619141522fcaa3c231dfe87092a0890",
+  "version": "536cafccc8b30fcbfff34a44996516ae55f0c215",
   "state": null,
   "propertySources": [
     {
-      "name": "https://github.com/ClearLoveRNG/SpringCloud/config-server/src/main/resources/config-server-dev.yml",
+      "name": "https://github.com/ClearLoveRNG/SpringCloud/config-server/src/main/resources/config-server-dev.properties",
       "source": {
-        "document": "foo = dev-foo"
+        "foo": "dev-foo"
       }
     },
     {
