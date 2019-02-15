@@ -1,0 +1,20 @@
+
+#修改成2222再启动一次，就有2个客户端实例了
+server:
+  port: 3333
+
+#为eureka客户端命名
+spring:
+  application:
+    name: eureka-client
+
+#指定eureka服务端(注册中心)的地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  instance:
+    #服务提供者30秒向注册中心续约一次服务(默认30秒)
+    lease-renewal-interval-in-seconds: 30
+    #服务提供者如果90秒没有续约服务，注册中心会将此服务从服务清单里剔除(默认90秒)
+    lease-expiration-duration-in-seconds: 90

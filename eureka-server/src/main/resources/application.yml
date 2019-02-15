@@ -1,0 +1,19 @@
+#因为后续内容也会在本地运行，为了和后续的注册的服务区分，将端口改为1111
+server:
+  port: 1111
+
+#默认设置下，该服务注册中心会将自己作为客户端来尝试注册自己，所以我们禁用它的客户端注册行为
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    #false表示不向注册中心注册自己
+    registerWithEureka: false
+    #本来注册中心就是管理服务实例，所以不需要去检索服务，所以设置为false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZ、one: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  application:
+    name: eurka-server

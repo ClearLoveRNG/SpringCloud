@@ -1,0 +1,17 @@
+server:
+  port: 5555
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+spring:
+  application:
+    name: feign
+
+#新版本Feign需要手动开启hystrix熔断器(这里IDEA没有提示，但是也得加上)
+feign:
+  hystrix:
+    enabled: true
+
