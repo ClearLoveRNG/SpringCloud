@@ -4,7 +4,7 @@
     "dev"
   ],
   "label": "master",
-  "version": "536cafccc8b30fcbfff34a44996516ae55f0c215",
+  "version": "8d95897ff52d903e7ebbab62287f005ee5f9c6a5",
   "state": null,
   "propertySources": [
     {
@@ -16,7 +16,7 @@
     {
       "name": "https://github.com/ClearLoveRNG/SpringCloud/config-server/src/main/resources/application.yml",
       "source": {
-        "server.port": 8888,
+        "server.port": 1006,
         "spring.application.name": "config-server",
         "spring.cloud.config.server.git.uri": "https://github.com/ClearLoveRNG/SpringCloud",
         "spring.cloud.config.server.git.username": "ClearLoveRNG",
