@@ -4,22 +4,24 @@ server:
 spring:
   application:
     name: config-server
-
-spring:
   cloud:
-    config:
-      server:
-        git:
-          #配置git仓库地址
-          uri:
-          #访问git仓库的用户名
-          username:
-          #访问git仓库的用户密码
-          password:
-          #配置仓库下的相对抖索位置
-          search-paths:
-      #配置仓库的分支
-      label:
+      config:
+        server:
+          git:
+            #配置git仓库地址
+            uri: https://github.com/ClearLoveRNG/SpringCloud
+            #访问git仓库的用户名
+            username: ClearLoveRNG
+            #访问git仓库的用户密码
+            password: Jht19960726,.
+            #配置仓库下的相对搜索位置
+            search-paths: /config-server/src/main/resources
+        #配置仓库的分支
+        label: master
+
+
+
+
 
 
 
