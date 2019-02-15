@@ -20,7 +20,7 @@ spring:
         #分支名
         label: master
 server:
-  port: 8888
+  port: 1007
 
 
 

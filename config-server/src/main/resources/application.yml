@@ -17,7 +17,9 @@ spring:
   #/{application}-{profile}.properties
   #/{label}/{application}-{profile}.properties
 
-  #访问http://localhost:1006/config-server/dev/master
+  #配置文件所在url:
+  #    https://github.com/ClearLoveRNG/SpringCloudYml/yml/config-client-dev.yml
+  #访问http://localhost:1006/config-client/dev/master
   #返回值写在result.json
   cloud:
       config:
